@@ -594,6 +594,13 @@ header .change .bar3 {
 .top-footer .container button:hover span {
   color: #fff;
 }
+.top-footer .container .arrow {
+  stroke: #9C69E2;
+}
+.top-footer .container .request:hover .arrow {
+  stroke: #fff;
+  transition: all 0.1s ease-in;
+}
 
 .bottom-footer {
   padding-bottom: 60px;

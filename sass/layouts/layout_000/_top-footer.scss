@@ -75,7 +75,15 @@
         }
 
         button:hover span {
-            color: #fff;
+           color: #fff;
+        }
+
+        .arrow {
+            stroke: #9C69E2;
+        }
+        .request:hover .arrow {
+            stroke: #fff;
+            transition: all .1s ease-in;
         }
     }
 }
