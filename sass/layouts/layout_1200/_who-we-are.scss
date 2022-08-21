@@ -1,0 +1,30 @@
+.who-we-are {
+    padding-bottom: 0;
+
+    .container {
+        padding: 110px 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: auto;
+            max-width: 400px;
+            margin-bottom: 0;
+            margin-right: 110px;
+        }
+
+        .content {
+            h3 {
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 160%;
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.testimonials {
+    padding-bottom: 60px;
+    
+
+    .container {
+        position: relative;
+        padding: 80px 70px;
+
+        h4 {
+            font-size: 40px;
+            margin-bottom: 80px;
+            z-index: 56;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar {
+            display: flex;
+            flex-direction: row;
+            max-width: 465px;
+            min-height: 300px;
+            padding: 50px 30px;
+            margin-bottom: 0;
+            z-index: 56;
+
+            img {
+                margin-right: 15px;
+            }
+
+            .text {
+                h5 {
+                    font-size: 16px;
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-top: 18px;
+                }
+                
+            }
+        }
+
+        .avatar:nth-of-type(1) {
+            margin-right: 100px;
+        }
+
+        .avatar:nth-of-type(2) {
+            margin-bottom: 0;
+        }
+    }
+
+    .test-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 540px;
+        height: auto;
+        z-index: 55;
+    }
+
+    .test-image-2 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 580px;
+        height: auto;
+        z-index: 55;
+    }
+
+}

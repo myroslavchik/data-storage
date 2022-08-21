@@ -1,0 +1,52 @@
+.first-screen {
+    padding-bottom: 25px;
+
+    .slogans {
+
+        h3 {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            color: $colorBlackTitle;
+            padding-top: 50px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
+            color: $colorBlackText;
+            margin-bottom: 25px;
+        }
+
+        button {
+            min-width: 210px;
+            min-height: 60px;
+            border: 1px solid #9C69E2;
+            box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+            border-radius: 50px;
+            background-color: #9C69E2;
+            color: #fff;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        button:hover {
+            background-color: #8A40EE;
+            cursor: pointer;
+        }
+    }
+
+    .image img {
+        height: auto;
+        width: 100%;
+        max-width: 770px;
+    }
+}

@@ -1,0 +1,146 @@
+.bottom-footer {
+    padding-bottom: 100px;
+
+    .container {
+
+        .footer-items {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 100px;
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 0;
+            max-width: 270px;
+
+            .logo {
+                margin-bottom: 60px;
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 180%;
+            }
+
+            .numbers {
+                font-size: 16px;
+                line-height: 180%;
+            }
+        }
+
+        .about {
+            margin-bottom: 0;
+            padding-top: 10px;
+        }
+
+        .about ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            li {
+                margin-bottom: 20px;
+            }
+
+            a {
+                font-size: 16px;
+            }
+        }
+
+        .about ul li:nth-of-type(1) {
+            margin-bottom: 30px;
+        }
+ 
+        .about ul li:nth-of-type(5) {
+            margin-bottom: 0;
+        }
+
+        .help {
+            margin-bottom: 0;
+            padding-top: 10px;
+        }
+
+        .help ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            li {
+                margin-bottom: 20px;
+            }
+
+            a {
+                font-size: 16px;
+            }
+        }
+
+        .help ul li:nth-of-type(1) {
+            margin-bottom: 30px;
+        }
+ 
+        .help ul li:nth-of-type(6) {
+            margin-bottom: 0;
+        }
+
+        .social {
+
+            padding-top: 10px;
+
+            .icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            h4 {
+                font-size: 16px;
+                color: #212353;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    margin-right: 15px;
+                }
+            }
+
+            .icon-color {
+                width: 50px;
+                height: 50px;
+            }
+
+            .icon-color {
+                display: none;
+            }
+
+            li:hover .icon {
+                display: none;
+            }
+
+            li:hover .icon-color {
+                display: inline;
+            }
+
+        }
+
+        .rights {
+
+            p {
+                max-width: 278px;
+                font-size: 12px;
+                line-height: 180%;
+                letter-spacing: 0.01em;
+                color: #212353;
+            }
+        }
+    }
+}

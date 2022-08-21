@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    line-height: 1;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+.container {
+    max-width: 738px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

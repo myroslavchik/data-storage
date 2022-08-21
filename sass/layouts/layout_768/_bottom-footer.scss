@@ -1,0 +1,25 @@
+.bottom-footer {
+
+    .container {
+
+        .footer-items {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .contacts {
+                margin-right: 15px;
+            }
+
+            .about {
+                margin-right: 15px;
+            }
+
+            .help {
+                margin-right: 15px;
+            }
+
+        }
+    }
+}
