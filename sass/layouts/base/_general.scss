@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -8,3 +12,25 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+.btn__up {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  width: 45px;
+  height: 45px;
+  background-color: #f063b88d;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s ease-in;
+  color: #fff;
+  z-index: 99;
+}
+
+.btn__up:hover {
+  background-color: #F063B8;
+  border-color: #fff;
+}

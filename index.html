@@ -27,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Data storage</title>
 </head>
@@ -78,21 +79,27 @@
         <section class="first-screen">
             <div class="container">
                 <div class="slogans">
-                    <h3>Save your data storage here.</h3>
-                    <p>Data Warehouse is a data storage area that has been
+                    <h3 class="slogans__title">Save your data storage here.</h3>
+                    <p class="slogans__text">Data Warehouse is a data storage area that has been
                        tested for security, so you can store your data here
                        safely but not be afraid of being stolen by others.
                     </p>
-                    <button>Learn more</button>
+                    <button class="slogans_btn">
+                        <span></span><span></span><span></span><span></span>
+                        Learn more
+                    </button>
                 </div>
                 <div class="image">
                     <img src="./img/first-screen-img.png" alt="People" width="770" height="407">
                 </div>
             </div>
+            <div class="btn__up">
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
         </section>
         <section class="who-we-are">
             <div class="container">
-                <img src="./img/second-screen-img.png" alt="Women" width="400" height="410">
+                <img class="reveal fade-left" src="./img/second-screen-img.png" alt="Women" width="400" height="410">
                 <div class="content">
                     <h3>We are a high-level data storage bank</h3>
                     <p>
@@ -116,7 +123,7 @@
                 </div>
                 <div class="cards">
                     <ul class="cards__list">
-                        <li class="cards__list--item">
+                        <li class="cards__list--item reveal fade-bottom">
                             <img src="./img/card-image-1.png" alt="A man" width="230" height="180">
                             <h4>Search Data</h4>
                             <p>Don’t worry if your data is very large, the Data Warehoue provides
@@ -129,7 +136,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="cards__list--item">
+                        <li class="cards__list--item reveal fade-bottom">
                             <img src="./img/card-image-2.png" alt="A women siting with a notebook">
                             <h4>24 Hours Access</h4>
                             <p>
@@ -143,7 +150,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="cards__list--item">
+                        <li class="cards__list--item reveal fade-bottom">
                             <img src="./img/card-image-3.png" alt="Printer">
                             <h4>Print Out</h4>
                             <p>
@@ -156,7 +163,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="cards__list--item">
+                        <li class="cards__list--item reveal fade-bottom">
                             <img src="./img/card-image-4.png" alt="A women with a key">
                             <h4>Security Code</h4>
                             <p>Data Security is one of our best facilities. Allows for your files
@@ -178,7 +185,7 @@
                 <img class="test-image" src="./img/testimonials-1.png" alt="Lines">
                 <h4>Testimonials</h4>
                 <div class="cards">
-                    <div class="avatar">
+                    <div class="avatar reveal fade-bottom">
                         <img src="./img/avatar-1.jpg" alt="John Fang">
                         <div class="text">
                             <h5>John Fang</h5>
@@ -189,7 +196,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="avatar">
+                    <div class="avatar reveal fade-bottom">
                         <img src="./img/avatar-2.jpg" alt="Hanna Wilson">
                         <div class="text">
                             <h5>Hanna Wilson</h5>
@@ -307,6 +314,7 @@
             </section>
         </footer>
     </main>
+    <script src="./js/script.js"></script>
     <script>
         const hamburger = document.querySelector('.nav-container');
         const menu = document.querySelector('.topnav');

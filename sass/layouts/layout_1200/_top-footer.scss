@@ -61,6 +61,7 @@
 
         .arrow {
             stroke: #9C69E2;
+            transition: .3s ease-in;
         }
         .request:hover .arrow {
             stroke: #fff;
