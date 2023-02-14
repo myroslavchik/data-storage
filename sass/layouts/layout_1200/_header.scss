@@ -11,6 +11,15 @@ header {
             display: flex;
             flex-direction: row;
             align-items: center;
+            opacity: 1;
+            display: flex;
+            position: relative;
+            height: unset;
+            width: unset;
+            padding-top: unset;
+            top: unset;
+            left: 0;
+            transition: .3s ease-in;
           }
 
         .nav-container {

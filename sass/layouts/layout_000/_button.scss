@@ -1,10 +1,6 @@
 header {
 
     .topnav {
-        display: none;
-      }
-    
-    .topnav.active {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -13,36 +9,47 @@ header {
         width: 100%;
         padding-top: 45px;
         top: 40px;
-        left: 0;
+        left: -100%;
         background-color: #fff;
+        transition: .3s ease-in;
+        opacity: 0;
+      }
+    
+    .topnav.active {
+        opacity: 1;
+        left: 0;
     }
 
     .nav-container {
         position: absolute;
-        top: 45px;
+        top: 25px;
         right: 15px;
         display: inline-block;
         cursor: pointer;
         z-index: 999;
+        transition: .3s ease-in;
     }
     
     .bar1, .bar2, .bar3 {
         width: 35px;
         height: 5px;
-        background-color: #333;
+        background-color: $colorPurple;
         margin: 6px 0;
         transition: all 0.3s ease;
     }
-      
-    .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-      
-    .change .bar2 {opacity: 0;}
-      
-    .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
+
+    .nav-container.active {
+              
+        .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        
+        .bar2 {opacity: 0;}
+        
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
     }
 }

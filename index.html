@@ -41,7 +41,7 @@
                     <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
             </a>
-            <div class="nav-container" onclick="myFunction(this)">
+            <div class="nav-container">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -121,9 +121,9 @@
                        those of you who store data in this Data Warehouse.
                     </p>
                 </div>
-                <div class="cards">
-                    <ul class="cards__list">
-                        <li class="cards__list--item reveal fade-bottom">
+                <div class="cards swiper">
+                    <ul class="cards__list swiper-wrapper">
+                        <li class="cards__list--item reveal fade-bottom swiper-slide">
                             <img src="./img/card-image-1.png" alt="A man" width="230" height="180">
                             <h4>Search Data</h4>
                             <p>Don’t worry if your data is very large, the Data Warehoue provides
@@ -136,7 +136,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="cards__list--item reveal fade-bottom">
+                        <li class="cards__list--item reveal fade-bottom swiper-slide">
                             <img src="./img/card-image-2.png" alt="A women siting with a notebook">
                             <h4>24 Hours Access</h4>
                             <p>
@@ -150,7 +150,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="cards__list--item reveal fade-bottom">
+                        <li class="cards__list--item reveal fade-bottom swiper-slide">
                             <img src="./img/card-image-3.png" alt="Printer">
                             <h4>Print Out</h4>
                             <p>
@@ -163,7 +163,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="cards__list--item reveal fade-bottom">
+                        <li class="cards__list--item reveal fade-bottom swiper-slide">
                             <img src="./img/card-image-4.png" alt="A women with a key">
                             <h4>Security Code</h4>
                             <p>Data Security is one of our best facilities. Allows for your files
@@ -315,18 +315,5 @@
         </footer>
     </main>
     <script src="./js/script.js"></script>
-    <script>
-        const hamburger = document.querySelector('.nav-container');
-        const menu = document.querySelector('.topnav');
-        hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        menu.classList.toggle('active');
-        })
-    </script>
-    <script>
-        function myFunction(x) {
-          x.classList.toggle("change");
-        }
-    </script>
 </body>
 </html>

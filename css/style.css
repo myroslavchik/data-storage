@@ -181,21 +181,23 @@ body {
 }
 
 .container {
-  max-width: 738px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 header .container {
   min-height: 100px;
-  padding-top: 25px;
+  padding-top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 header .container .icon {
+  position: relative;
   width: 44px;
   height: 35px;
+  z-index: 99;
 }
 header .container .menu__list {
   display: flex;
@@ -203,7 +205,7 @@ header .container .menu__list {
   align-items: center;
 }
 header .container .menu__list li {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 header .container .menu__list a {
   text-decoration: none;
@@ -254,9 +256,6 @@ header .button:hover .arrow {
 }
 
 header .topnav {
-  display: none;
-}
-header .topnav.active {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -265,32 +264,39 @@ header .topnav.active {
   width: 100%;
   padding-top: 45px;
   top: 40px;
-  left: 0;
+  left: -100%;
   background-color: #fff;
+  transition: 0.3s ease-in;
+  opacity: 0;
+}
+header .topnav.active {
+  opacity: 1;
+  left: 0;
 }
 header .nav-container {
   position: absolute;
-  top: 45px;
+  top: 25px;
   right: 15px;
   display: inline-block;
   cursor: pointer;
   z-index: 999;
+  transition: 0.3s ease-in;
 }
 header .bar1, header .bar2, header .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: #9C69E2;
   margin: 6px 0;
   transition: all 0.3s ease;
 }
-header .change .bar1 {
+header .nav-container.active .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
-header .change .bar2 {
+header .nav-container.active .bar2 {
   opacity: 0;
 }
-header .change .bar3 {
+header .nav-container.active .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
@@ -419,7 +425,7 @@ header .change .bar3 {
   flex-direction: column;
   padding: 52px 50px 52px 80px;
   max-width: 400px;
-  min-height: 350px;
+  min-height: 300px;
   border-radius: 50px;
   margin-bottom: 15px;
   margin-right: 25px;
@@ -585,6 +591,7 @@ header .change .bar3 {
   margin-right: 15px;
   z-index: 56;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  margin-bottom: 5px;
 }
 .testimonials .container .avatar .text h5 {
   font-family: "Montserrat";
@@ -937,6 +944,15 @@ header .change .bar3 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    opacity: 1;
+    display: flex;
+    position: relative;
+    height: unset;
+    width: unset;
+    padding-top: unset;
+    top: unset;
+    left: 0;
+    transition: 0.3s ease-in;
   }
   header .container .nav-container {
     display: none;
@@ -1080,6 +1096,7 @@ header .change .bar3 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 5px;
   }
   .features .container .cards__list .cards__list--item {
     position: relative;
@@ -1095,10 +1112,10 @@ header .change .bar3 {
   }
   .features .container .cards__list .cards__list--item img {
     position: absolute;
-    width: 240px;
-    height: 180px;
-    left: -150px;
-    top: 110px;
+    width: 200px;
+    height: 140px;
+    left: -100px;
+    top: 25px;
     transition: 0.3s ease-in;
   }
   .features .container .cards__list .cards__list--item img:hover {

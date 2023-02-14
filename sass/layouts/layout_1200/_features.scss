@@ -26,6 +26,7 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            gap: 5px;
 
             .cards__list--item {
                 position: relative;
@@ -41,10 +42,10 @@
 
                 img {
                     position: absolute;
-                    width: 240px;
-                    height: 180px;
-                    left: -150px;
-                    top: 110px;
+                    width: 200px;
+                    height: 140px;
+                    left: -100px;
+                    top: 25px;
                     transition: .3s ease-in;
                 }
 

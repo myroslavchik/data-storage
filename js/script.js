@@ -1,3 +1,13 @@
+//menu button
+
+const hamburger = document.querySelector('.nav-container');
+const menu = document.querySelector('.topnav');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('active');
+  })
+
+
 //animation scroll
 
 function reveal() {
@@ -37,3 +47,4 @@ function toUp () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+

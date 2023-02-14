@@ -2,14 +2,16 @@ header {
 
     .container {
         min-height: 100px;
-        padding-top: 25px;
+        padding-top: 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         .icon {
+            position: relative;
             width: 44px;
             height: 35px;
+            z-index: 99;
         }
 
         .menu__list {
@@ -18,7 +20,7 @@ header {
             align-items: center;
 
             li {
-                margin-bottom: 15px;
+                margin-bottom: 25px;
             }
 
             a {
