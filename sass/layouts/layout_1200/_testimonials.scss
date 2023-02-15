@@ -1,10 +1,13 @@
 .testimonials {
     padding-bottom: 60px;
+
+    .container__back {
+        padding: 80px 70px;
+    }
     
 
     .container {
         position: relative;
-        padding: 80px 70px;
 
         h4 {
             font-size: 40px;

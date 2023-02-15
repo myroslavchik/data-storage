@@ -1,12 +1,15 @@
 .who-we-are {
     padding-bottom: 0;
 
-    .container {
+    .container__back {
         padding: 110px 70px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+
+    .container {
 
         img {
             height: auto;

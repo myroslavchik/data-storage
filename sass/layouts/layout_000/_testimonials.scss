@@ -1,11 +1,14 @@
 .testimonials {
     padding-bottom: 60px;
 
-    .container {
-        position: relative;
+    .container__back {
         background: #CCDDFF;
         border-radius: 50px;
         padding: 30px;
+    }
+
+    .container {
+        position: relative;
 
         h4 {
             font-family: 'Work Sans';
